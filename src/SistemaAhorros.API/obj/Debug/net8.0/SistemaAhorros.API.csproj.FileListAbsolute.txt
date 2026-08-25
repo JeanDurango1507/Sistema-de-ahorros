@@ -36,3 +36,42 @@ C:\Users\duran\OneDrive\Escritorio\Sistema de ahorros\src\SistemaAhorros.API\obj
 C:\Users\duran\OneDrive\Escritorio\Sistema de ahorros\src\SistemaAhorros.API\obj\Debug\net8.0\SistemaAhorros.API.pdb
 C:\Users\duran\OneDrive\Escritorio\Sistema de ahorros\src\SistemaAhorros.API\obj\Debug\net8.0\SistemaAhorros.API.genruntimeconfig.cache
 C:\Users\duran\OneDrive\Escritorio\Sistema de ahorros\src\SistemaAhorros.API\obj\Debug\net8.0\ref\SistemaAhorros.API.dll
+C:\Users\Jhonatan\Desktop\Aplicaciones moviles\Sistema de ahorros\Sistema-de-ahorros\src\SistemaAhorros.API\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Jhonatan\Desktop\Aplicaciones moviles\Sistema de ahorros\Sistema-de-ahorros\src\SistemaAhorros.API\bin\Debug\net8.0\appsettings.json
+C:\Users\Jhonatan\Desktop\Aplicaciones moviles\Sistema de ahorros\Sistema-de-ahorros\src\SistemaAhorros.API\bin\Debug\net8.0\SistemaAhorros.API.exe
+C:\Users\Jhonatan\Desktop\Aplicaciones moviles\Sistema de ahorros\Sistema-de-ahorros\src\SistemaAhorros.API\bin\Debug\net8.0\SistemaAhorros.API.deps.json
+C:\Users\Jhonatan\Desktop\Aplicaciones moviles\Sistema de ahorros\Sistema-de-ahorros\src\SistemaAhorros.API\bin\Debug\net8.0\SistemaAhorros.API.runtimeconfig.json
+C:\Users\Jhonatan\Desktop\Aplicaciones moviles\Sistema de ahorros\Sistema-de-ahorros\src\SistemaAhorros.API\bin\Debug\net8.0\SistemaAhorros.API.dll
+C:\Users\Jhonatan\Desktop\Aplicaciones moviles\Sistema de ahorros\Sistema-de-ahorros\src\SistemaAhorros.API\bin\Debug\net8.0\SistemaAhorros.API.pdb
+C:\Users\Jhonatan\Desktop\Aplicaciones moviles\Sistema de ahorros\Sistema-de-ahorros\src\SistemaAhorros.API\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\Jhonatan\Desktop\Aplicaciones moviles\Sistema de ahorros\Sistema-de-ahorros\src\SistemaAhorros.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Jhonatan\Desktop\Aplicaciones moviles\Sistema de ahorros\Sistema-de-ahorros\src\SistemaAhorros.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Jhonatan\Desktop\Aplicaciones moviles\Sistema de ahorros\Sistema-de-ahorros\src\SistemaAhorros.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Jhonatan\Desktop\Aplicaciones moviles\Sistema de ahorros\Sistema-de-ahorros\src\SistemaAhorros.API\bin\Debug\net8.0\SistemaAhorros.Application.dll
+C:\Users\Jhonatan\Desktop\Aplicaciones moviles\Sistema de ahorros\Sistema-de-ahorros\src\SistemaAhorros.API\bin\Debug\net8.0\SistemaAhorros.Domain.dll
+C:\Users\Jhonatan\Desktop\Aplicaciones moviles\Sistema de ahorros\Sistema-de-ahorros\src\SistemaAhorros.API\bin\Debug\net8.0\SistemaAhorros.Infrastructure.dll
+C:\Users\Jhonatan\Desktop\Aplicaciones moviles\Sistema de ahorros\Sistema-de-ahorros\src\SistemaAhorros.API\bin\Debug\net8.0\SistemaAhorros.Application.pdb
+C:\Users\Jhonatan\Desktop\Aplicaciones moviles\Sistema de ahorros\Sistema-de-ahorros\src\SistemaAhorros.API\bin\Debug\net8.0\SistemaAhorros.Infrastructure.pdb
+C:\Users\Jhonatan\Desktop\Aplicaciones moviles\Sistema de ahorros\Sistema-de-ahorros\src\SistemaAhorros.API\bin\Debug\net8.0\SistemaAhorros.Domain.pdb
+C:\Users\Jhonatan\Desktop\Aplicaciones moviles\Sistema de ahorros\Sistema-de-ahorros\src\SistemaAhorros.API\obj\Debug\net8.0\SistemaAhorros.API.csproj.AssemblyReference.cache
+C:\Users\Jhonatan\Desktop\Aplicaciones moviles\Sistema de ahorros\Sistema-de-ahorros\src\SistemaAhorros.API\obj\Debug\net8.0\SistemaAhorros.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jhonatan\Desktop\Aplicaciones moviles\Sistema de ahorros\Sistema-de-ahorros\src\SistemaAhorros.API\obj\Debug\net8.0\SistemaAhorros.API.AssemblyInfoInputs.cache
+C:\Users\Jhonatan\Desktop\Aplicaciones moviles\Sistema de ahorros\Sistema-de-ahorros\src\SistemaAhorros.API\obj\Debug\net8.0\SistemaAhorros.API.AssemblyInfo.cs
+C:\Users\Jhonatan\Desktop\Aplicaciones moviles\Sistema de ahorros\Sistema-de-ahorros\src\SistemaAhorros.API\obj\Debug\net8.0\SistemaAhorros.API.csproj.CoreCompileInputs.cache
+C:\Users\Jhonatan\Desktop\Aplicaciones moviles\Sistema de ahorros\Sistema-de-ahorros\src\SistemaAhorros.API\obj\Debug\net8.0\SistemaAhorros.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Jhonatan\Desktop\Aplicaciones moviles\Sistema de ahorros\Sistema-de-ahorros\src\SistemaAhorros.API\obj\Debug\net8.0\SistemaAhorros.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Jhonatan\Desktop\Aplicaciones moviles\Sistema de ahorros\Sistema-de-ahorros\src\SistemaAhorros.API\obj\Debug\net8.0\SistemaAhorros.API.sourcelink.json
+C:\Users\Jhonatan\Desktop\Aplicaciones moviles\Sistema de ahorros\Sistema-de-ahorros\src\SistemaAhorros.API\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Jhonatan\Desktop\Aplicaciones moviles\Sistema de ahorros\Sistema-de-ahorros\src\SistemaAhorros.API\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Jhonatan\Desktop\Aplicaciones moviles\Sistema de ahorros\Sistema-de-ahorros\src\SistemaAhorros.API\obj\Debug\net8.0\staticwebassets\msbuild.SistemaAhorros.API.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Jhonatan\Desktop\Aplicaciones moviles\Sistema de ahorros\Sistema-de-ahorros\src\SistemaAhorros.API\obj\Debug\net8.0\staticwebassets\msbuild.build.SistemaAhorros.API.props
+C:\Users\Jhonatan\Desktop\Aplicaciones moviles\Sistema de ahorros\Sistema-de-ahorros\src\SistemaAhorros.API\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.SistemaAhorros.API.props
+C:\Users\Jhonatan\Desktop\Aplicaciones moviles\Sistema de ahorros\Sistema-de-ahorros\src\SistemaAhorros.API\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.SistemaAhorros.API.props
+C:\Users\Jhonatan\Desktop\Aplicaciones moviles\Sistema de ahorros\Sistema-de-ahorros\src\SistemaAhorros.API\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Jhonatan\Desktop\Aplicaciones moviles\Sistema de ahorros\Sistema-de-ahorros\src\SistemaAhorros.API\obj\Debug\net8.0\scopedcss\bundle\SistemaAhorros.API.styles.css
+C:\Users\Jhonatan\Desktop\Aplicaciones moviles\Sistema de ahorros\Sistema-de-ahorros\src\SistemaAhorros.API\obj\Debug\net8.0\SistemaA.0389DA01.Up2Date
+C:\Users\Jhonatan\Desktop\Aplicaciones moviles\Sistema de ahorros\Sistema-de-ahorros\src\SistemaAhorros.API\obj\Debug\net8.0\SistemaAhorros.API.dll
+C:\Users\Jhonatan\Desktop\Aplicaciones moviles\Sistema de ahorros\Sistema-de-ahorros\src\SistemaAhorros.API\obj\Debug\net8.0\refint\SistemaAhorros.API.dll
+C:\Users\Jhonatan\Desktop\Aplicaciones moviles\Sistema de ahorros\Sistema-de-ahorros\src\SistemaAhorros.API\obj\Debug\net8.0\SistemaAhorros.API.pdb
+C:\Users\Jhonatan\Desktop\Aplicaciones moviles\Sistema de ahorros\Sistema-de-ahorros\src\SistemaAhorros.API\obj\Debug\net8.0\SistemaAhorros.API.genruntimeconfig.cache
+C:\Users\Jhonatan\Desktop\Aplicaciones moviles\Sistema de ahorros\Sistema-de-ahorros\src\SistemaAhorros.API\obj\Debug\net8.0\ref\SistemaAhorros.API.dll

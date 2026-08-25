@@ -27,19 +27,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\duran\\.nuget\\packages\\": {}
+    "C:\\Users\\Jhonatan\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\duran\\OneDrive\\Escritorio\\Sistema de ahorros\\src\\SistemaAhorros.Application\\SistemaAhorros.Application.csproj",
+      "projectUniqueName": "C:\\Users\\Jhonatan\\Desktop\\Aplicaciones moviles\\Sistema de ahorros\\Sistema-de-ahorros\\src\\SistemaAhorros.Application\\SistemaAhorros.Application.csproj",
       "projectName": "SistemaAhorros.Application",
-      "projectPath": "C:\\Users\\duran\\OneDrive\\Escritorio\\Sistema de ahorros\\src\\SistemaAhorros.Application\\SistemaAhorros.Application.csproj",
-      "packagesPath": "C:\\Users\\duran\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\duran\\OneDrive\\Escritorio\\Sistema de ahorros\\src\\SistemaAhorros.Application\\obj\\",
+      "projectPath": "C:\\Users\\Jhonatan\\Desktop\\Aplicaciones moviles\\Sistema de ahorros\\Sistema-de-ahorros\\src\\SistemaAhorros.Application\\SistemaAhorros.Application.csproj",
+      "packagesPath": "C:\\Users\\Jhonatan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Jhonatan\\Desktop\\Aplicaciones moviles\\Sistema de ahorros\\Sistema-de-ahorros\\src\\SistemaAhorros.Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\duran\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Jhonatan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -53,8 +53,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\duran\\OneDrive\\Escritorio\\Sistema de ahorros\\src\\SistemaAhorros.Domain\\SistemaAhorros.Domain.csproj": {
-              "projectPath": "C:\\Users\\duran\\OneDrive\\Escritorio\\Sistema de ahorros\\src\\SistemaAhorros.Domain\\SistemaAhorros.Domain.csproj"
+            "C:\\Users\\Jhonatan\\Desktop\\Aplicaciones moviles\\Sistema de ahorros\\Sistema-de-ahorros\\src\\SistemaAhorros.Domain\\SistemaAhorros.Domain.csproj": {
+              "projectPath": "C:\\Users\\Jhonatan\\Desktop\\Aplicaciones moviles\\Sistema de ahorros\\Sistema-de-ahorros\\src\\SistemaAhorros.Domain\\SistemaAhorros.Domain.csproj"
             }
           }
         }
@@ -89,7 +89,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
