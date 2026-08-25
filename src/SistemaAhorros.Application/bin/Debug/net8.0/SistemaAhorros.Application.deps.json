@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "SistemaAhorros.Application/1.0.0": {
+        "dependencies": {
+          "SistemaAhorros.Domain": "1.0.0"
+        },
+        "runtime": {
+          "SistemaAhorros.Application.dll": {}
+        }
+      },
+      "SistemaAhorros.Domain/1.0.0": {
+        "runtime": {
+          "SistemaAhorros.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SistemaAhorros.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SistemaAhorros.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

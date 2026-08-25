@@ -1,0 +1,6 @@
+@SistemaAhorros.API_HostAddress = http://localhost:5246
+
+GET {{SistemaAhorros.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
