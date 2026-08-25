@@ -13,3 +13,4 @@ C:\Users\duran\OneDrive\Escritorio\Sistema de ahorros\src\SistemaAhorros.Applica
 C:\Users\duran\OneDrive\Escritorio\Sistema de ahorros\src\SistemaAhorros.Application\obj\Debug\net8.0\refint\SistemaAhorros.Application.dll
 C:\Users\duran\OneDrive\Escritorio\Sistema de ahorros\src\SistemaAhorros.Application\obj\Debug\net8.0\SistemaAhorros.Application.pdb
 C:\Users\duran\OneDrive\Escritorio\Sistema de ahorros\src\SistemaAhorros.Application\obj\Debug\net8.0\ref\SistemaAhorros.Application.dll
+C:\Users\duran\OneDrive\Escritorio\Sistema de ahorros\src\SistemaAhorros.Application\obj\Debug\net8.0\SistemaAhorros.Application.sourcelink.json

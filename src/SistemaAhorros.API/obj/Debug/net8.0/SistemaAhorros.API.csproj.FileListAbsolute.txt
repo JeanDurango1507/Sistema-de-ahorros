@@ -36,3 +36,4 @@ C:\Users\duran\OneDrive\Escritorio\Sistema de ahorros\src\SistemaAhorros.API\obj
 C:\Users\duran\OneDrive\Escritorio\Sistema de ahorros\src\SistemaAhorros.API\obj\Debug\net8.0\SistemaAhorros.API.pdb
 C:\Users\duran\OneDrive\Escritorio\Sistema de ahorros\src\SistemaAhorros.API\obj\Debug\net8.0\SistemaAhorros.API.genruntimeconfig.cache
 C:\Users\duran\OneDrive\Escritorio\Sistema de ahorros\src\SistemaAhorros.API\obj\Debug\net8.0\ref\SistemaAhorros.API.dll
+C:\Users\duran\OneDrive\Escritorio\Sistema de ahorros\src\SistemaAhorros.API\obj\Debug\net8.0\SistemaAhorros.API.sourcelink.json
