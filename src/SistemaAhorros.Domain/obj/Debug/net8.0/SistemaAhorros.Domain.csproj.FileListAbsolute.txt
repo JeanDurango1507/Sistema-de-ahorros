@@ -9,3 +9,4 @@ C:\Users\duran\OneDrive\Escritorio\Sistema de ahorros\src\SistemaAhorros.Domain\
 C:\Users\duran\OneDrive\Escritorio\Sistema de ahorros\src\SistemaAhorros.Domain\obj\Debug\net8.0\refint\SistemaAhorros.Domain.dll
 C:\Users\duran\OneDrive\Escritorio\Sistema de ahorros\src\SistemaAhorros.Domain\obj\Debug\net8.0\SistemaAhorros.Domain.pdb
 C:\Users\duran\OneDrive\Escritorio\Sistema de ahorros\src\SistemaAhorros.Domain\obj\Debug\net8.0\ref\SistemaAhorros.Domain.dll
+C:\Users\duran\OneDrive\Escritorio\Sistema de ahorros\src\SistemaAhorros.Domain\obj\Debug\net8.0\SistemaAhorros.Domain.sourcelink.json

@@ -15,3 +15,4 @@ C:\Users\duran\OneDrive\Escritorio\Sistema de ahorros\src\SistemaAhorros.Infrast
 C:\Users\duran\OneDrive\Escritorio\Sistema de ahorros\src\SistemaAhorros.Infrastructure\obj\Debug\net8.0\refint\SistemaAhorros.Infrastructure.dll
 C:\Users\duran\OneDrive\Escritorio\Sistema de ahorros\src\SistemaAhorros.Infrastructure\obj\Debug\net8.0\SistemaAhorros.Infrastructure.pdb
 C:\Users\duran\OneDrive\Escritorio\Sistema de ahorros\src\SistemaAhorros.Infrastructure\obj\Debug\net8.0\ref\SistemaAhorros.Infrastructure.dll
+C:\Users\duran\OneDrive\Escritorio\Sistema de ahorros\src\SistemaAhorros.Infrastructure\obj\Debug\net8.0\SistemaAhorros.Infrastructure.sourcelink.json
