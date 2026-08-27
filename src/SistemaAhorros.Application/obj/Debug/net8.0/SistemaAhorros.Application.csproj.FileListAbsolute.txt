@@ -1,0 +1,16 @@
+C:\Users\duran\OneDrive\Escritorio\Sistema de ahorros\src\SistemaAhorros.Application\bin\Debug\net8.0\SistemaAhorros.Application.deps.json
+C:\Users\duran\OneDrive\Escritorio\Sistema de ahorros\src\SistemaAhorros.Application\bin\Debug\net8.0\SistemaAhorros.Application.dll
+C:\Users\duran\OneDrive\Escritorio\Sistema de ahorros\src\SistemaAhorros.Application\bin\Debug\net8.0\SistemaAhorros.Application.pdb
+C:\Users\duran\OneDrive\Escritorio\Sistema de ahorros\src\SistemaAhorros.Application\bin\Debug\net8.0\SistemaAhorros.Domain.dll
+C:\Users\duran\OneDrive\Escritorio\Sistema de ahorros\src\SistemaAhorros.Application\bin\Debug\net8.0\SistemaAhorros.Domain.pdb
+C:\Users\duran\OneDrive\Escritorio\Sistema de ahorros\src\SistemaAhorros.Application\obj\Debug\net8.0\SistemaAhorros.Application.csproj.AssemblyReference.cache
+C:\Users\duran\OneDrive\Escritorio\Sistema de ahorros\src\SistemaAhorros.Application\obj\Debug\net8.0\SistemaAhorros.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\duran\OneDrive\Escritorio\Sistema de ahorros\src\SistemaAhorros.Application\obj\Debug\net8.0\SistemaAhorros.Application.AssemblyInfoInputs.cache
+C:\Users\duran\OneDrive\Escritorio\Sistema de ahorros\src\SistemaAhorros.Application\obj\Debug\net8.0\SistemaAhorros.Application.AssemblyInfo.cs
+C:\Users\duran\OneDrive\Escritorio\Sistema de ahorros\src\SistemaAhorros.Application\obj\Debug\net8.0\SistemaAhorros.Application.csproj.CoreCompileInputs.cache
+C:\Users\duran\OneDrive\Escritorio\Sistema de ahorros\src\SistemaAhorros.Application\obj\Debug\net8.0\SistemaA.62530F33.Up2Date
+C:\Users\duran\OneDrive\Escritorio\Sistema de ahorros\src\SistemaAhorros.Application\obj\Debug\net8.0\SistemaAhorros.Application.dll
+C:\Users\duran\OneDrive\Escritorio\Sistema de ahorros\src\SistemaAhorros.Application\obj\Debug\net8.0\refint\SistemaAhorros.Application.dll
+C:\Users\duran\OneDrive\Escritorio\Sistema de ahorros\src\SistemaAhorros.Application\obj\Debug\net8.0\SistemaAhorros.Application.pdb
+C:\Users\duran\OneDrive\Escritorio\Sistema de ahorros\src\SistemaAhorros.Application\obj\Debug\net8.0\ref\SistemaAhorros.Application.dll
+C:\Users\duran\OneDrive\Escritorio\Sistema de ahorros\src\SistemaAhorros.Application\obj\Debug\net8.0\SistemaAhorros.Application.sourcelink.json
