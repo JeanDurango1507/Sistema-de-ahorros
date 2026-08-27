@@ -1,3 +1,16 @@
+<<<<<<< HEAD
+using System;
+
+namespace SistemaAhorros.Domain.Entities
+{
+    public class Account
+    {
+        public Guid Id { get; set; }
+        public string AccountNumber { get; set; } = string.Empty;
+        public decimal Balance { get; set; }
+    }
+}
+=======
 namespace SistemaAhorros.Domain.Entities;
 
 public class Account
@@ -59,4 +72,5 @@ public class Account
         Balance += amount;
     }
 }
+>>>>>>> origin/main
 >>>>>>> origin/main
