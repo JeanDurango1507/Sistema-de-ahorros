@@ -7,31 +7,31 @@ namespace SistemaAhorros.API.Controllers
 {
     [ApiController]
     [Route("api/[controller]")] // Esto genera la ruta de internet: api/cuentas
-    public class CuentasController : ControllerBase
+    public class AccountsController : ControllerBase
     {
-        private readonly ConsultarSaldoService _saldoService;
+        private readonly ConsultarSaldoService _balanceService;
 
         // El constructor recibe el servicio que creamos en la capa de Aplicación
-        public CuentasController(ConsultarSaldoService saldoService)
+        public AccountsController(ConsultarSaldoService balanceService)
         {
-            _saldoService = saldoService;
+            _balanceService = balanceService;
         }
 
         // Endpoint GET: api/cuentas/{id}/saldo
-        [HttpGet("{id}/saldo")]
-        public async Task<IActionResult> ObtenerSaldo(Guid id)
+        [HttpGet("{id}/balance")]
+        public async Task<IActionResult> GetBalance(Guid id)
         {
             try
             {
-                var saldoActual = await _saldoService.EjecutarAsync(id);
-                
+                var currentBalance = await _balanceService.EjecutarAsync(id);
+
                 // Si todo sale bien, devolvemos el saldo en formato JSON
-                return Ok(new { cuentaId = id, saldo = saldoActual });
+                return Ok(new { accountId = id, balance = currentBalance });
             }
             catch (Exception ex)
             {
                 // Si la cuenta no existe o hay un error, devolvemos un mensaje de error
-                return NotFound(new { mensaje = ex.Message });
+                return NotFound(new { message = ex.Message });
             }
         }
     }

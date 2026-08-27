@@ -4,9 +4,9 @@ using SistemaAhorros.Domain.Entities;
 
 namespace SistemaAhorros.Domain
 {
-    public interface ICuentaRepository
+    public interface IAccountRepository
     {
         // Esta tarea promete que podremos buscar una Cuenta usando su ID
-        Task<Cuenta?> ObtenerPorIdAsync(Guid id);
+        Task<Account?> GetByIdAsync(Guid id);
     }
 }

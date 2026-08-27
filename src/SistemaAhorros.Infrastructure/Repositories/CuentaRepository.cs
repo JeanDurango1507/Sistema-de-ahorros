@@ -7,29 +7,29 @@ using SistemaAhorros.Domain.Entities;
 
 namespace SistemaAhorros.Infrastructure.Repositories
 {
-    public class CuentaRepository : ICuentaRepository
+    public class AccountRepository : IAccountRepository
     {
         // Creamos una lista en memoria con datos falsos de prueba
-        private readonly List<Cuenta> _cuentasSimuladas;
+        private readonly List<Account> _simulatedAccounts;
 
-        public CuentaRepository()
+        public AccountRepository()
         {
-            _cuentasSimuladas = new List<Cuenta>
+            _simulatedAccounts = new List<Account>
             {
                 // Cuenta 1: Saldo de $1,500.50
-                new Cuenta { Id = Guid.Parse("11111111-1111-1111-1111-111111111111"), NumeroCuenta = "123456", Saldo = 1500.50m },
+                new Account { Id = Guid.Parse("1193078067"), AccountNumber = "123456", Balance = 1500.50m },
                 // Cuenta 2: Saldo de $50.00
-                new Cuenta { Id = Guid.Parse("22222222-2222-2222-2222-222222222222"), NumeroCuenta = "789012", Saldo = 50.00m }
+                new Account { Id = Guid.Parse("1193078066"), AccountNumber = "789012", Balance = 50.00m }
             };
         }
 
         // Buscamos la cuenta por su ID en nuestra lista simulada
-        public async Task<Cuenta?> ObtenerPorIdAsync(Guid id)
+        public async Task<Account?> GetByIdAsync(Guid id)
         {
             // Simulamos una respuesta asíncrona rápida
-            await Task.Delay(10); 
-            
-            return _cuentasSimuladas.FirstOrDefault(c => c.Id == id);
+            await Task.Delay(10);
+
+            return _simulatedAccounts.FirstOrDefault(account => account.Id == id);
         }
     }
 }
