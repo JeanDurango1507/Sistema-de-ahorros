@@ -3,6 +3,10 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllers();
+builder.Services.AddSingleton<SistemaAhorros.Application.Interfaces.IAccountRepository,
+    SistemaAhorros.Infrastructure.Repositories.InMemoryAccountRepository>();
+builder.Services.AddScoped<SistemaAhorros.Application.Interfaces.IAccountService,
+    SistemaAhorros.Application.Services.AccountService>();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
