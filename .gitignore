@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## Build output
 bin/
 obj/
@@ -11,3 +12,15 @@ obj/
 ## Test results
 TestResults/
 coverage/
+=======
+# Archivos generados por .NET
+**/bin/
+**/obj/
+
+# Visual Studio
+.vs/
+
+# Archivos de usuario
+*.user
+*.suo
+>>>>>>> origin/feature/deposit
