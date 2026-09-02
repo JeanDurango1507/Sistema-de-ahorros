@@ -1,25 +1,28 @@
+using SistemaAhorros.Domain;
 using SistemaAhorros.Application.DTOs;
-using SistemaAhorros.Domain.Entities;
 
 namespace SistemaAhorros.Application.UseCases;
 
-public class DepositUseCase
+public class DepositarUseCase
 {
-    private static readonly List<Account> _accounts = new()
-    {
-        new Account("123456", 1000m)
-    };
+    private readonly IAccountRepository _accountRepository;
 
-    public Account Execute(DepositDto dto)
+    public DepositarUseCase(IAccountRepository accountRepository)
     {
-        var account = _accounts.FirstOrDefault(a => a.AccountNumber == dto.AccountNumber);
+        _accountRepository = accountRepository;
+    }
 
+    public async Task<object> ExecuteAsync(DepositDto request)
+    {
+        var account = await _accountRepository.GetByIdAsync(request.AccountId);
         if (account == null)
         {
-            throw new KeyNotFoundException($"Account number {dto.AccountNumber} was not found.");
+            throw new KeyNotFoundException($"La cuenta con ID {request.AccountId} no existe.");
         }
 
-        account.Deposit(dto.Amount);
-        return account;
+        account.Deposit(request.Amount);
+        await _accountRepository.UpdateAsync(account);
+
+        return new { AccountId = account.Id, NewBalance = account.Balance };
     }
 }

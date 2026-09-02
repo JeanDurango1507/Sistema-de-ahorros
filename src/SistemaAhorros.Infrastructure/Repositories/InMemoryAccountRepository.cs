@@ -1,22 +1,44 @@
-using System.Collections.Concurrent;
-using SistemaAhorros.Application.Interfaces;
+using SistemaAhorros.Domain;
 using SistemaAhorros.Domain.Entities;
 
 namespace SistemaAhorros.Infrastructure.Repositories;
 
-public sealed class InMemoryAccountRepository : IAccountRepository
+public class InMemoryAccountRepository : IAccountRepository
 {
-    private readonly ConcurrentDictionary<int, Account> accounts = new(
-        new[] { new KeyValuePair<int, Account>(1, new Account(1, 100000m)) });
-
-    public Account? GetById(int accountId)
+    private static readonly List<Account> _accounts = new()
     {
-        accounts.TryGetValue(accountId, out Account? account);
-        return account;
+        new Account(1, "123456", 1000m, "Titular Principal")
+    };
+
+    public Account? GetById(int id)
+    {
+        return _accounts.FirstOrDefault(a => a.Id == id);
+    }
+
+    public Task<Account?> GetByIdAsync(int id)
+    {
+        var account = _accounts.FirstOrDefault(a => a.Id == id);
+        return Task.FromResult(account);
+    }
+
+    public Task<Account?> GetByAccountNumberAsync(string accountNumber)
+    {
+        var account = _accounts.FirstOrDefault(a => a.AccountNumber == accountNumber);
+        return Task.FromResult(account);
     }
 
     public void Update(Account account)
     {
-        accounts[account.Id] = account;
+        var index = _accounts.FindIndex(a => a.Id == account.Id);
+        if (index != -1)
+        {
+            _accounts[index] = account;
+        }
+    }
+
+    public Task UpdateAsync(Account account)
+    {
+        Update(account);
+        return Task.CompletedTask;
     }
 }

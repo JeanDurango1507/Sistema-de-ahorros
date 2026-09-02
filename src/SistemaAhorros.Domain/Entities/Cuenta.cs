@@ -1,76 +1,45 @@
-<<<<<<< HEAD
-using System;
-
-namespace SistemaAhorros.Domain.Entities
-{
-    public class Account
-    {
-        public Guid Id { get; set; }
-        public string AccountNumber { get; set; } = string.Empty;
-        public decimal Balance { get; set; }
-    }
-}
-=======
 namespace SistemaAhorros.Domain.Entities;
 
 public class Account
 {
-<<<<<<< HEAD
-	public int Id { get; private set; }
-	public decimal Balance { get; private set; }
-
-	public Account(int id, decimal initialBalance)
-	{
-		if (id <= 0)
-		{
-			throw new ArgumentOutOfRangeException(nameof(id), "The identifier must be greater than zero.");
-		}
-
-		if (initialBalance < 0)
-		{
-			throw new ArgumentOutOfRangeException(nameof(initialBalance), "The initial balance cannot be negative.");
-		}
-
-		Id = id;
-		Balance = initialBalance;
-	}
-
-	public void Withdraw(decimal amount)
-	{
-		if (amount <= 0)
-		{
-			throw new ArgumentOutOfRangeException(nameof(amount), "The withdrawal amount must be greater than zero.");
-		}
-
-		if (amount > Balance)
-		{
-			throw new Exceptions.InsufficientBalanceException(Id, Balance, amount);
-		}
-
-		Balance -= amount;
-	}
-}
-=======
-    public Guid Id { get; set; }
+    public int Id { get; set; }
     public string AccountNumber { get; set; } = string.Empty;
     public decimal Balance { get; private set; }
+    public string AccountHolder { get; set; } = string.Empty;
 
-    public Account(string accountNumber, decimal initialBalance = 0)
+    public Account()
     {
-        Id = Guid.NewGuid();
+    }
+
+    public Account(int id, string accountNumber, decimal initialBalance, string accountHolder)
+    {
+        Id = id;
         AccountNumber = accountNumber;
         Balance = initialBalance;
+        AccountHolder = accountHolder;
     }
 
     public void Deposit(decimal amount)
     {
         if (amount <= 0)
-        {
-            throw new ArgumentException("The deposit amount must be greater than zero.");
-        }
+            throw new ArgumentException("Deposit amount must be greater than zero.");
 
         Balance += amount;
     }
+
+    public void Withdraw(decimal amount)
+    {
+        if (amount <= 0)
+            throw new ArgumentException("Withdrawal amount must be greater than zero.");
+
+        if (amount > Balance)
+            throw new InvalidOperationException("Insufficient balance.");
+
+        Balance -= amount;
+    }
+
+    public decimal GetBalance()
+    {
+        return Balance;
+    }
 }
->>>>>>> origin/main
->>>>>>> origin/main

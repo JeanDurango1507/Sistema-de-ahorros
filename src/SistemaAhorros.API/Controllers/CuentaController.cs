@@ -1,44 +1,6 @@
-<<<<<<< HEAD
-using System;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using SistemaAhorros.Application.Services;
 using SistemaAhorros.Application.Servicios;
-
-namespace SistemaAhorros.API.Controllers
-{
-    [ApiController]
-    [Route("api/[controller]")] // Esto genera la ruta de internet: api/cuentas
-    public class AccountsController : ControllerBase
-    {
-        private readonly ConsultarSaldoService _balanceService;
-
-        // El constructor recibe el servicio que creamos en la capa de Aplicación
-        public AccountsController(ConsultarSaldoService balanceService)
-        {
-            _balanceService = balanceService;
-        }
-
-        // Endpoint GET: api/cuentas/{id}/saldo
-        [HttpGet("{id}/balance")]
-        public async Task<IActionResult> GetBalance(Guid id)
-        {
-            try
-            {
-                var currentBalance = await _balanceService.EjecutarAsync(id);
-
-                // Si todo sale bien, devolvemos el saldo en formato JSON
-                return Ok(new { accountId = id, balance = currentBalance });
-            }
-            catch (Exception ex)
-            {
-                // Si la cuenta no existe o hay un error, devolvemos un mensaje de error
-                return NotFound(new { message = ex.Message });
-            }
-        }
-    }
-}
-=======
-using Microsoft.AspNetCore.Mvc;
 using SistemaAhorros.Application.DTOs;
 using SistemaAhorros.Application.UseCases;
 
@@ -46,40 +8,64 @@ namespace SistemaAhorros.API.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
-public class AccountController : ControllerBase
+public class CuentaController : ControllerBase
 {
-    private readonly DepositUseCase _depositUseCase;
+    private readonly ConsultarBalanceService _consultarBalanceService;
+    private readonly DepositarUseCase _depositarUseCase;
+    // Si tienes un servicio para retirar, inyéctalo aquí (ejemplo: RetirarUseCase _retirarUseCase)
 
-    public AccountController()
+    public CuentaController(
+        ConsultarBalanceService consultarBalanceService,
+        DepositarUseCase depositarUseCase)
     {
-        _depositUseCase = new DepositUseCase();
+        _consultarBalanceService = consultarBalanceService;
+        _depositarUseCase = depositarUseCase;
     }
 
-    [HttpPost("deposit")]
-    public IActionResult Deposit([FromBody] DepositDto dto)
+    [HttpGet("{id:int}/balance")]
+    public async Task<IActionResult> GetBalance(int id)
     {
         try
         {
-            var updatedAccount = _depositUseCase.Execute(dto);
-            return Ok(new
-            {
-                Message = "Deposit successfully executed.",
-                AccountNumber = updatedAccount.AccountNumber,
-                NewBalance = updatedAccount.Balance
-            });
-        }
-        catch (ArgumentException ex)
-        {
-            return BadRequest(new { Error = ex.Message });
+            var balance = await _consultarBalanceService.ExecuteAsync(id);
+            return Ok(new { AccountId = id, Balance = balance });
         }
         catch (KeyNotFoundException ex)
         {
-            return NotFound(new { Error = ex.Message });
+            return NotFound(new { Message = ex.Message });
         }
-        catch (Exception)
+        catch (Exception ex)
         {
-            return StatusCode(500, new { Error = "An internal server error occurred." });
+            return StatusCode(500, new { Message = ex.Message });
         }
     }
+
+    [HttpPost("deposit")]
+    public async Task<IActionResult> Deposit([FromBody] DepositDto request)
+    {
+        try
+        {
+            var result = await _depositarUseCase.ExecuteAsync(request);
+            return Ok(result);
+        }
+        catch (ArgumentException ex)
+        {
+            return BadRequest(new { Message = ex.Message });
+        }
+        catch (KeyNotFoundException ex)
+        {
+            return NotFound(new { Message = ex.Message });
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(500, new { Message = ex.Message });
+        }
+    }
+
+    [HttpPost("{accountId:int}/retirar")]
+    public async Task<IActionResult> Retirar(int accountId, [FromBody] object request)
+    {
+        // Pega aquí la lógica que tenías en AccountController para el retiro
+        return Ok();
+    }
 }
->>>>>>> origin/main

@@ -1,5 +1,6 @@
 using SistemaAhorros.Application.DTOs;
 using SistemaAhorros.Application.Interfaces;
+using SistemaAhorros.Domain;
 using SistemaAhorros.Domain.Entities;
 
 namespace SistemaAhorros.Application.Services;

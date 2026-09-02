@@ -1,12 +1,11 @@
-using System;
-using System.Threading.Tasks;
 using SistemaAhorros.Domain.Entities;
 
-namespace SistemaAhorros.Domain
+namespace SistemaAhorros.Domain;
+
+public interface IAccountRepository
 {
-    public interface IAccountRepository
-    {
-        // Esta tarea promete que podremos buscar una Cuenta usando su ID
-        Task<Account?> GetByIdAsync(Guid id);
-    }
+    Account? GetById(int id);
+    Task<Account?> GetByIdAsync(int id);
+    void Update(Account account);
+    Task UpdateAsync(Account account);
 }

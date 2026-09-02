@@ -1,35 +1,39 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using SistemaAhorros.Domain;
 using SistemaAhorros.Domain.Entities;
 
-namespace SistemaAhorros.Infrastructure.Repositories
+namespace SistemaAhorros.Infrastructure.Repositories;
+
+public class AccountRepository : IAccountRepository
 {
-    public class AccountRepository : IAccountRepository
+    private static readonly List<Account> _cuentas = new()
     {
-        // Creamos una lista en memoria con datos falsos de prueba
-        private readonly List<Account> _simulatedAccounts;
+        new Account(1, "123456", 1000m, "Titular Principal"),
+        new Account(2, "654321", 500m, "Titular Secundario")
+    };
 
-        public AccountRepository()
+    public Account? GetById(int id)
+    {
+        return _cuentas.FirstOrDefault(c => c.Id == id);
+    }
+
+    public Task<Account?> GetByIdAsync(int id)
+    {
+        var cuenta = _cuentas.FirstOrDefault(c => c.Id == id);
+        return Task.FromResult(cuenta);
+    }
+
+    public void Update(Account account)
+    {
+        var index = _cuentas.FindIndex(c => c.Id == account.Id);
+        if (index != -1)
         {
-            _simulatedAccounts = new List<Account>
-            {
-                // Cuenta 1: Saldo de $1,500.50
-                new Account { Id = Guid.Parse("1193078067"), AccountNumber = "123456", Balance = 1500.50m },
-                // Cuenta 2: Saldo de $50.00
-                new Account { Id = Guid.Parse("1193078066"), AccountNumber = "789012", Balance = 50.00m }
-            };
+            _cuentas[index] = account;
         }
+    }
 
-        // Buscamos la cuenta por su ID en nuestra lista simulada
-        public async Task<Account?> GetByIdAsync(Guid id)
-        {
-            // Simulamos una respuesta asíncrona rápida
-            await Task.Delay(10);
-
-            return _simulatedAccounts.FirstOrDefault(account => account.Id == id);
-        }
+    public Task UpdateAsync(Account account)
+    {
+        Update(account);
+        return Task.CompletedTask;
     }
 }

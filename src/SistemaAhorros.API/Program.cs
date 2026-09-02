@@ -1,19 +1,25 @@
+using SistemaAhorros.Domain;
+using SistemaAhorros.Infrastructure.Repositories;
+using SistemaAhorros.Application.Services;
+using SistemaAhorros.Application.Servicios;
+using SistemaAhorros.Application.UseCases;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
+// Configurar servicios del contenedor de dependencias
 builder.Services.AddControllers();
-builder.Services.AddSingleton<SistemaAhorros.Application.Interfaces.IAccountRepository,
-    SistemaAhorros.Infrastructure.Repositories.InMemoryAccountRepository>();
-builder.Services.AddScoped<SistemaAhorros.Application.Interfaces.IAccountService,
-    SistemaAhorros.Application.Services.AccountService>();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// Registro de Repositorios e Inyección de Dependencias
+builder.Services.AddSingleton<IAccountRepository, AccountRepository>();
+
+// Registro de Casos de Uso / Servicios de Aplicación
+builder.Services.AddScoped<ConsultarBalanceService>();
+builder.Services.AddScoped<DepositarUseCase>(); // Cambiado de DepositUseCase a DepositarUseCase
+
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -21,9 +27,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
 app.UseAuthorization();
-
 app.MapControllers();
 
 app.Run();
