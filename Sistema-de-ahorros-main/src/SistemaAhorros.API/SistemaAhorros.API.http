@@ -1,0 +1,10 @@
+@SistemaAhorros.API_HostAddress = http://localhost:5246
+
+POST {{SistemaAhorros.API_HostAddress}}/api/account/1/withdraw
+Content-Type: application/json
+
+{
+	"amount": 30000
+}
+
+###
